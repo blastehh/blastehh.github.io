@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LVM | Knowledge Base</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="manifest" href="/manifest.json">
+    <script src="/script/medium-zoom.min.js"></script>
+    <meta name="description" content="Techie Things to Remember">
+    <meta HTTP-EQUIV="Content-Security-Policy" CONTENT="default-src &#39;self&#39; ; script-src &#39;self&#39; &#39;sha256-RI2wTKrX7ok6EAjqxellug203gYTRtLlYn3x1O4Q2Lg=&#39;; style-src &#39;self&#39;; style-src-attr &#39;unsafe-hashes&#39; &#39;sha256-U3Dvsi7idr0GtxsC6hd4YstZNXAAsMdt6Wz0zJdYrKw=&#39;;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.1a2ed2f3.css" as="style"><link rel="preload" href="/assets/js/app.5ec0f833.js" as="script"><link rel="preload" href="/assets/js/2.e3d7a0c0.js" as="script"><link rel="preload" href="/assets/js/38.5f339744.js" as="script"><link rel="preload" href="/assets/js/6.87a7cc97.js" as="script"><link rel="prefetch" href="/assets/js/10.97b3d5ee.js"><link rel="prefetch" href="/assets/js/11.3e33b5f1.js"><link rel="prefetch" href="/assets/js/12.f00fed31.js"><link rel="prefetch" href="/assets/js/13.51db0fc1.js"><link rel="prefetch" href="/assets/js/14.bcfaff3d.js"><link rel="prefetch" href="/assets/js/15.ac4a2195.js"><link rel="prefetch" href="/assets/js/16.70747ffb.js"><link rel="prefetch" href="/assets/js/17.1c9e97f3.js"><link rel="prefetch" href="/assets/js/18.f0446ac9.js"><link rel="prefetch" href="/assets/js/19.5f2352ad.js"><link rel="prefetch" href="/assets/js/20.b2e4e9b8.js"><link rel="prefetch" href="/assets/js/21.3a2c3111.js"><link rel="prefetch" href="/assets/js/22.8245776b.js"><link rel="prefetch" href="/assets/js/23.98e6ac8b.js"><link rel="prefetch" href="/assets/js/24.50b888ea.js"><link rel="prefetch" href="/assets/js/25.d81ce868.js"><link rel="prefetch" href="/assets/js/26.eede1faf.js"><link rel="prefetch" href="/assets/js/27.fcf10c9b.js"><link rel="prefetch" href="/assets/js/28.0cf4a1a9.js"><link rel="prefetch" href="/assets/js/29.df9d5304.js"><link rel="prefetch" href="/assets/js/3.ea477072.js"><link rel="prefetch" href="/assets/js/30.19f4d549.js"><link rel="prefetch" href="/assets/js/31.27836410.js"><link rel="prefetch" href="/assets/js/32.e679dd6a.js"><link rel="prefetch" href="/assets/js/33.3f045d2d.js"><link rel="prefetch" href="/assets/js/34.3e50fdc7.js"><link rel="prefetch" href="/assets/js/35.f6bc730a.js"><link rel="prefetch" href="/assets/js/36.9b33848b.js"><link rel="prefetch" href="/assets/js/37.09a85cf4.js"><link rel="prefetch" href="/assets/js/39.7a488b1c.js"><link rel="prefetch" href="/assets/js/4.a6aa5e67.js"><link rel="prefetch" href="/assets/js/40.024c83c5.js"><link rel="prefetch" href="/assets/js/41.b73de863.js"><link rel="prefetch" href="/assets/js/42.2b294dba.js"><link rel="prefetch" href="/assets/js/43.4b2923b7.js"><link rel="prefetch" href="/assets/js/44.fb99ceb4.js"><link rel="prefetch" href="/assets/js/45.ade9d54a.js"><link rel="prefetch" href="/assets/js/46.6c5e1e38.js"><link rel="prefetch" href="/assets/js/47.11068d86.js"><link rel="prefetch" href="/assets/js/48.95bf5574.js"><link rel="prefetch" href="/assets/js/49.abfc8d05.js"><link rel="prefetch" href="/assets/js/5.6bac8baf.js"><link rel="prefetch" href="/assets/js/50.a8438487.js"><link rel="prefetch" href="/assets/js/51.cc3abadc.js"><link rel="prefetch" href="/assets/js/52.43305e5b.js"><link rel="prefetch" href="/assets/js/53.5db3673d.js"><link rel="prefetch" href="/assets/js/54.648542f3.js"><link rel="prefetch" href="/assets/js/55.8fa1ccae.js"><link rel="prefetch" href="/assets/js/56.501331fd.js"><link rel="prefetch" href="/assets/js/57.1908dbea.js"><link rel="prefetch" href="/assets/js/58.41b9b389.js"><link rel="prefetch" href="/assets/js/59.d5dc0915.js"><link rel="prefetch" href="/assets/js/60.daaee099.js"><link rel="prefetch" href="/assets/js/61.f2cb548f.js"><link rel="prefetch" href="/assets/js/62.5ee90d0d.js"><link rel="prefetch" href="/assets/js/63.aa40482e.js"><link rel="prefetch" href="/assets/js/7.150705c2.js"><link rel="prefetch" href="/assets/js/8.3e94aea9.js"><link rel="prefetch" href="/assets/js/9.2640b090.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1a2ed2f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Knowledge Base</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/blastehh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://m.blasteh.uk/@blasteh" target="_blank" rel="me" class="nav-link external">
+  Fediverse
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/blastehh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://m.blasteh.uk/@blasteh" target="_blank" rel="me" class="nav-link external">
+  Fediverse
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Ansible</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Cisco</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Docker</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ESXi</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Guides</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Linux</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/linux/diag.html" class="sidebar-link">Diagnostic commands</a></li><li><a href="/linux/filesystem.html" class="sidebar-link">File System</a></li><li><a href="/linux/gsocket.html" class="sidebar-link">GSocket</a></li><li><a href="/linux/iproute2.html" class="sidebar-link">Iproute2</a></li><li><a href="/linux/iptables.html" class="sidebar-link">Iptables</a></li><li><a href="/linux/journalctl.html" class="sidebar-link">Journalctl</a></li><li><a href="/linux/kernel.html" class="sidebar-link">Kernel</a></li><li><a href="/linux/logrotation.html" class="sidebar-link">Logrotation</a></li><li><a href="/linux/lvm.html" aria-current="page" class="active sidebar-link">LVM</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/lvm.html#expand-vg-on-same-partition" class="sidebar-link">Expand VG on same partition</a></li><li class="sidebar-sub-header"><a href="/linux/lvm.html#expand-vg-using-new-partition" class="sidebar-link">Expand VG using new partition</a></li><li class="sidebar-sub-header"><a href="/linux/lvm.html#converting-to-lvm" class="sidebar-link">Converting to LVM</a></li></ul></li><li><a href="/linux/mdraid.html" class="sidebar-link">MDRaid</a></li><li><a href="/linux/mounting.html" class="sidebar-link">Mounting</a></li><li><a href="/linux/network.html" class="sidebar-link">Network Configuration</a></li><li><a href="/linux/ovhkernel.html" class="sidebar-link">OVH Kernel</a></li><li><a href="/linux/packageman.html" class="sidebar-link">Package Managers</a></li><li><a href="/linux/pass.html" class="sidebar-link">Passwords</a></li><li><a href="/linux/pki.html" class="sidebar-link">PKI Stuff</a></li><li><a href="/linux/sed.html" class="sidebar-link">SED</a></li><li><a href="/linux/selinux.html" class="sidebar-link">SELinux</a></li><li><a href="/linux/shell.html" class="sidebar-link">Shell Reference</a></li><li><a href="/linux/sshs.html" class="sidebar-link">SSH Stuff</a></li><li><a href="/linux/systemd.html" class="sidebar-link">Systemd</a></li><li><a href="/linux/vi.html" class="sidebar-link">Vi</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>OpenVPN</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Other Stuff</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Synology NAS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Web</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Windows</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="lvm"><a href="#lvm" class="header-anchor">#</a> LVM</h1> <p>Collection of procedures for manipulating LVM stuff</p> <hr> <p></p><div class="table-of-contents"><ul><li><a href="#expand-vg-on-same-partition">Expand VG on same partition</a><ul><li><a href="#expand-the-vm-disk">Expand the VM disk</a></li><li><a href="#expand-partition-size">Expand Partition Size</a></li><li><a href="#resize-the-pv">Resize the PV</a></li><li><a href="#expand-lv">Expand LV</a></li><li><a href="#resize-filesystem">Resize Filesystem</a></li></ul></li><li><a href="#expand-vg-using-new-partition">Expand VG using new partition</a><ul><li><a href="#create-or-expand-the-vm-disk">Create or Expand the VM disk</a></li><li><a href="#create-a-new-partition">Create a new partition</a></li><li><a href="#create-a-new-pv-on-the-new-partition">Create a new PV on the new partition</a></li><li><a href="#add-the-new-pv-to-the-existing-vg">Add the new PV to the existing VG</a></li><li><a href="#extend-the-lv-to-use-the-new-space">Extend the LV to use the new space</a></li><li><a href="#resize-the-filesystem">Resize the filesystem</a></li></ul></li><li><a href="#converting-to-lvm">Converting to LVM</a><ul><li><a href="#prepare-lvm-disk">Prepare LVM Disk</a></li><li><a href="#create-a-new-filesystem">Create a new filesystem</a></li><li><a href="#copy-contents-to-new-filesystem">Copy contents to new filesystem</a></li><li><a href="#edit-fstab">Edit fstab</a></li><li><a href="#scan-the-changes">Scan the changes</a></li><li><a href="#create-new-ramdisk">Create new ramdisk</a></li><li><a href="#edit-grub">Edit grub</a></li><li><a href="#reboot">Reboot</a></li><li><a href="#create-new-pv">Create New PV</a></li><li><a href="#extend-vg">Extend VG</a></li><li><a href="#extend-lv">Extend LV</a></li><li><a href="#resizing-the-filesystem">Resizing the filesystem</a></li><li><a href="#finish">Finish</a></li></ul></li></ul></div><p></p> <h2 id="expand-vg-on-same-partition"><a href="#expand-vg-on-same-partition" class="header-anchor">#</a> Expand VG on same partition</h2> <p>You want to re-use the same partition, e.g. expand sda2 and increase the size of root_pv</p> <div class="language- extra-class"><pre class="language-text"><code>sda                    8:0    0   50G  0 disk
+├─sda1                 8:1    0  487M  0 part /boot
+└─sda2                 8:5    0 49.5G  0 part
+  ├─my_vg-root_pv  253:0    0 48.6G  0 lvm  /
+  └─my_vg-swap_pv  253:1    0  980M  0 lvm  [SWAP]
+</code></pre></div><h3 id="expand-the-vm-disk"><a href="#expand-the-vm-disk" class="header-anchor">#</a> Expand the VM disk</h3> <p>This part will be done on the hypervisor, increase the VM's disk as needed.
+Once the disk has been resized, use one of the methods <a href="https://blasteh.uk/linux/filesystem.html#detect-new-disk-size-without-reboot" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> to detect the new disk size; otherwise reboot the system for it to detect the new size.</p> <h3 id="expand-partition-size"><a href="#expand-partition-size" class="header-anchor">#</a> Expand Partition Size</h3> <p>Install <code>growpart</code> to make this easier, the alternative is to delete and recreate the partition using <code>fdisk</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> cloud-utils-growpart
+</code></pre></div><p>Expand the disk, take note of the space between <code>/dev/sda</code> and <code>2</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>growpart /dev/sda <span class="token number">2</span>
+</code></pre></div><p><code>/dev/sda2</code> should now show the larger size</p> <h3 id="resize-the-pv"><a href="#resize-the-pv" class="header-anchor">#</a> Resize the PV</h3> <p>Run <code>pvs</code> before and after to see the difference. You should see a larger PV after running <code>pvresize</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>pvs
+pvresize /dev/sda2
+pvs
+</code></pre></div><p>Your VG should also be larger now, check with</p> <div class="language-bash extra-class"><pre class="language-bash"><code>vgs
+</code></pre></div><h3 id="expand-lv"><a href="#expand-lv" class="header-anchor">#</a> Expand LV</h3> <p>This will resize your LV to take up all of the free space now available</p> <div class="language-bash extra-class"><pre class="language-bash"><code>lvextend <span class="token parameter variable">-l</span> +100%FREE /dev/my_vg/root_pv
+</code></pre></div><h3 id="resize-filesystem"><a href="#resize-filesystem" class="header-anchor">#</a> Resize Filesystem</h3> <p>Depending on your chosen filesystem, use one of the following:</p> <h4 id="xfs"><a href="#xfs" class="header-anchor">#</a> XFS</h4> <p>Using xfs:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#xfs_growfs &lt;mountpoint&gt;</span>
+xfs_growfs /
+</code></pre></div><h4 id="ext3-ext4"><a href="#ext3-ext4" class="header-anchor">#</a> EXT3/EXT4</h4> <p>using EXT filesystem</p> <div class="language-bash extra-class"><pre class="language-bash"><code>resize2fs /dev/my_vg/root_pv
+</code></pre></div><h2 id="expand-vg-using-new-partition"><a href="#expand-vg-using-new-partition" class="header-anchor">#</a> Expand VG using new partition</h2> <ul><li><p>If LVM exists on partitioned areas, start with <a href="#create-or-expand-the-vm-disk">this</a> section.</p></li> <li><p>If LVM exists on bare disks, run this command (Assuming <code>/dev/sda</code> is where your existing LVM resides and you just resized it):</p> <div class="language-bash extra-class"><pre class="language-bash"><code>pvresize /dev/sda
+</code></pre></div><p>Once resized, <a href="#extend-the-lv-to-use-the-new-space">skip</a> to this section.</p></li></ul> <h3 id="create-or-expand-the-vm-disk"><a href="#create-or-expand-the-vm-disk" class="header-anchor">#</a> Create or Expand the VM disk</h3> <p>This part will be done on the hypervisor, move on to the next part once the VM's disk has been increased in size.</p> <h3 id="create-a-new-partition"><a href="#create-a-new-partition" class="header-anchor">#</a> Create a new partition</h3> <p>Create a new partition on the newly added free space and then set the partition type to lvm</p> <p>We're using <code>/dev/sda</code> as the disk that has been expanded</p> <p><code>/dev/vg_vol</code> as the existing VG to be extended</p> <p><code>lv_part</code> as the partition to be extended</p> <ul><li>fdisk /dev/sda</li> <li>Create a new primary partition at /dev/sda3 <code>n</code>, <code>p</code>, <code>3</code></li> <li>Check the partition table <code>p</code></li> <li>Change the partition type to <em><strong>Linux LVM</strong></em> <code>t</code>, <code>3</code>, <code>8e</code></li> <li>Check the partition table again <code>p</code></li> <li>Write the changes <code>w</code></li> <li>Reboot to save changes (if required)</li></ul> <h3 id="create-a-new-pv-on-the-new-partition"><a href="#create-a-new-pv-on-the-new-partition" class="header-anchor">#</a> Create a new PV on the new partition</h3> <ul><li><code>pvcreate /dev/sda3</code></li> <li>Check the created PV <code>pvdisplay</code></li></ul> <h3 id="add-the-new-pv-to-the-existing-vg"><a href="#add-the-new-pv-to-the-existing-vg" class="header-anchor">#</a> Add the new PV to the existing VG</h3> <ul><li><code>vgextend /dev/vg_vol /dev/sda3</code></li> <li><code>vgdisplay</code></li></ul> <h3 id="extend-the-lv-to-use-the-new-space"><a href="#extend-the-lv-to-use-the-new-space" class="header-anchor">#</a> Extend the LV to use the new space</h3> <ul><li><code>lvextend -l +100%FREE /dev/vg_vol/lv_part</code></li></ul> <h3 id="resize-the-filesystem"><a href="#resize-the-filesystem" class="header-anchor">#</a> Resize the filesystem</h3> <ul><li><code>resize2fs /dev/vg_vol/lv_part</code></li></ul> <h2 id="converting-to-lvm"><a href="#converting-to-lvm" class="header-anchor">#</a> Converting to LVM</h2> <p>We will copy our main root partition to a new empty disk and then extend the lvm partition to use the original disk after it has been copied over.
+This assumes that you are using a separate /boot partition.</p> <h3 id="prepare-lvm-disk"><a href="#prepare-lvm-disk" class="header-anchor">#</a> Prepare LVM Disk</h3> <p>This is our initial state:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># lsblk</span>
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      <span class="token number">8</span>:0    <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> disk
+├─sda1   <span class="token number">8</span>:1    <span class="token number">0</span>  511M  <span class="token number">0</span> part /boot/efi
+├─sda2   <span class="token number">8</span>:2    <span class="token number">0</span>  511M  <span class="token number">0</span> part /boot
+├─sda3   <span class="token number">8</span>:3    <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> part /
+└─sda4   <span class="token number">8</span>:4    <span class="token number">0</span>  511M  <span class="token number">0</span> part <span class="token punctuation">[</span>SWAP<span class="token punctuation">]</span>
+sdb      <span class="token number">8</span>:16   <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> disk
+└─sdb1   <span class="token number">8</span>:17   <span class="token number">0</span>  511M  <span class="token number">0</span> part
+</code></pre></div><p>We'll use <code>/dev/sdb</code> as our new disk for creating the LVM filesystem</p> <p><code>vg_main</code> as our new VG</p> <p><code>lv_root</code> as our new LV</p> <ul><li>Create the new partition with <code>fdisk /dev/sdb</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># lsblk</span>
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      <span class="token number">8</span>:0    <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> disk
+├─sda1   <span class="token number">8</span>:1    <span class="token number">0</span>  511M  <span class="token number">0</span> part /boot/efi
+├─sda2   <span class="token number">8</span>:2    <span class="token number">0</span>  511M  <span class="token number">0</span> part /boot
+├─sda3   <span class="token number">8</span>:3    <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> part /
+└─sda4   <span class="token number">8</span>:4    <span class="token number">0</span>  511M  <span class="token number">0</span> part <span class="token punctuation">[</span>SWAP<span class="token punctuation">]</span>
+sdb      <span class="token number">8</span>:16   <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> disk
+├─sdb1   <span class="token number">8</span>:17   <span class="token number">0</span>  511M  <span class="token number">0</span> part
+└─sdb2   <span class="token number">8</span>:18   <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> part
+</code></pre></div><ul><li><code>pvcreate /dev/sdb2</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># pvcreate /dev/sdb2</span>
+  Physical volume <span class="token string">&quot;/dev/sdb2&quot;</span> successfully created
+</code></pre></div><ul><li><code>vgcreate vg_main /dev/sdb2</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># vgcreate vg_main /dev/sdb2</span>
+  Volume group <span class="token string">&quot;vg_main&quot;</span> successfully created
+</code></pre></div><p>Here's our state so far:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># vgdisplay</span>
+  --- Volume group ---
+  VG Name               vg_main
+  System ID
+  Format                lvm2
+  Metadata Areas        <span class="token number">1</span>
+  Metadata Sequence No  <span class="token number">1</span>
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                <span class="token number">0</span>
+  Cur LV                <span class="token number">0</span>
+  Open LV               <span class="token number">0</span>
+  Max PV                <span class="token number">0</span>
+  Cur PV                <span class="token number">1</span>
+  Act PV                <span class="token number">1</span>
+  VG Size               <span class="token number">1.82</span> TiB
+  PE Size               <span class="token number">4.00</span> MiB
+  Total PE              <span class="token number">476804</span>
+  Alloc PE / Size       <span class="token number">0</span> / <span class="token number">0</span>
+  Free  PE / Size       <span class="token number">476804</span> / <span class="token number">1.82</span> TiB
+  VG UUID               ltBtnM-2Oxu-WVWk-YcLY-wLHy-AZiE-dm2MiR
+
+<span class="token comment"># pvdisplay</span>
+  --- Physical volume ---
+  PV Name               /dev/sdb2
+  VG Name               vg_main
+  PV Size               <span class="token number">1.82</span> TiB / not usable <span class="token number">1.07</span> MiB
+  Allocatable           <span class="token function">yes</span>
+  PE Size               <span class="token number">4.00</span> MiB
+  Total PE              <span class="token number">476804</span>
+  Free PE               <span class="token number">476804</span>
+  Allocated PE          <span class="token number">0</span>
+  PV UUID               o8svsy-NUwd-2mOe-6PWx-Taop-Cf44-MxA19c
+</code></pre></div><p>We'll use 100% of the free space on this disk</p> <ul><li><code>lvcreate --name lv_root vg_main -l 100%FREE</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># lvcreate --name lv_root vg_main -l 100%FREE</span>
+  Logical volume <span class="token string">&quot;lv_root&quot;</span> created.
+</code></pre></div><p>And our state:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># lvdisplay</span>
+  --- Logical volume ---
+  LV Path                /dev/vg_main/lv_root
+  LV Name                lv_root
+  VG Name                vg_main
+  LV UUID                9y6COH-813Z-AU6u-nAtd-CdCA-leOS-NgT57S
+  LV Write Access        read/write
+  LV Creation host, <span class="token function">time</span> ns3099345, <span class="token number">2018</span>-09-01 <span class="token number">16</span>:28:21 +0200
+  LV Status              available
+  <span class="token comment"># open                 0</span>
+  LV Size                <span class="token number">1.82</span> TiB
+  Current LE             <span class="token number">476804</span>
+  Segments               <span class="token number">1</span>
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently <span class="token builtin class-name">set</span> to     <span class="token number">256</span>
+  Block device           <span class="token number">252</span>:0
+</code></pre></div><h3 id="create-a-new-filesystem"><a href="#create-a-new-filesystem" class="header-anchor">#</a> Create a new filesystem</h3> <ul><li><code>mkfs.ext4 /dev/vg_main/lv_root</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># mkfs.ext4 /dev/vg_main/lv_root</span>
+<span class="token function">mke2fs</span> <span class="token number">1.42</span>.13 <span class="token punctuation">(</span><span class="token number">17</span>-May-2015<span class="token punctuation">)</span>
+Creating filesystem with <span class="token number">488247296</span> 4k blocks and <span class="token number">122068992</span> inodes
+Filesystem UUID: 21a20292-bbaa-47a0-9634-138922619019
+Superblock backups stored on blocks:
+        <span class="token number">32768</span>, <span class="token number">98304</span>, <span class="token number">163840</span>, <span class="token number">229376</span>, <span class="token number">294912</span>, <span class="token number">819200</span>, <span class="token number">884736</span>, <span class="token number">1605632</span>, <span class="token number">2654208</span>,
+        <span class="token number">4096000</span>, <span class="token number">7962624</span>, <span class="token number">11239424</span>, <span class="token number">20480000</span>, <span class="token number">23887872</span>, <span class="token number">71663616</span>, <span class="token number">78675968</span>,
+        <span class="token number">102400000</span>, <span class="token number">214990848</span>
+
+Allocating group tables: <span class="token keyword">done</span>
+Writing inode tables: <span class="token keyword">done</span>
+Creating journal <span class="token punctuation">(</span><span class="token number">32768</span> blocks<span class="token punctuation">)</span>: <span class="token keyword">done</span>
+Writing superblocks and filesystem accounting information: <span class="token keyword">done</span>
+</code></pre></div><h3 id="copy-contents-to-new-filesystem"><a href="#copy-contents-to-new-filesystem" class="header-anchor">#</a> Copy contents to new filesystem</h3> <ul><li><code>mkdir /mnt/sdb</code></li> <li><code>mount /dev/vg_main/lv_root /mnt/sdb</code></li> <li><code>cp -dpRx / /mnt/sdb/</code></li></ul> <h3 id="edit-fstab"><a href="#edit-fstab" class="header-anchor">#</a> Edit fstab</h3> <p>We will need to add the disk in to our copied disk</p> <ul><li>Grab UUID with <code>blkid</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code># blkid
+/dev/sda1: LABEL=&quot;EFI_SYSPART&quot; UUID=&quot;9F4B-3971&quot; TYPE=&quot;vfat&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;cf755262-1548-4bff-9304-ea4c5cc5035d&quot;
+/dev/sda2: LABEL=&quot;/boot&quot; UUID=&quot;1a818491-c638-4db2-988d-db2894f76d0d&quot; TYPE=&quot;ext4&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;064c46cc-725b-4cf1-ba80-f0e194ebae99&quot;
+/dev/sda3: LABEL=&quot;/&quot; UUID=&quot;a77a87e5-a10d-4655-b633-48676cfa3b2a&quot; TYPE=&quot;ext4&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;fcd69399-1f5a-49fe-9d61-03d51f734e75&quot;
+/dev/sda4: LABEL=&quot;swap-sda4&quot; UUID=&quot;68cae6eb-bc9a-42a8-ba07-91bbeb2cbb9a&quot; TYPE=&quot;swap&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;898360d2-9b48-482c-a669-86c529d1f2af&quot;
+/dev/sdb1: LABEL=&quot;EFI_SYSPART&quot; UUID=&quot;A00D-3109&quot; TYPE=&quot;vfat&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;225b4983-72a6-4131-927c-9010c21382cd&quot;
+/dev/sdb2: UUID=&quot;o8svsy-NUwd-2mOe-6PWx-Taop-Cf44-MxA19c&quot; TYPE=&quot;LVM2_member&quot; PARTUUID=&quot;a49e995c-a690-4b35-98cf-865047688ad3&quot;
+/dev/mapper/vg_main-lv_root: UUID=&quot;21a20292-bbaa-47a0-9634-138922619019&quot; TYPE=&quot;ext4&quot;
+</code></pre></div><ul><li><code>nano /mnt/sdb/etc/fstab</code></li></ul> <p>Add <code>UUID=</code> to the UUID itself and place it in the file</p> <p>This is what the result looks like:</p> <div class="language- extra-class"><pre class="language-text"><code># &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;
+#/dev/sda3      /       ext4    errors=remount-ro,relatime      0       1
+UUID=21a20292-bbaa-47a0-9634-138922619019 /       ext4    errors=remount-ro,relatime      0       1
+/dev/sda2       /boot   ext4    errors=remount-ro,relatime      0       1
+/dev/sda4       swap    swap    defaults        0       0
+proc            /proc   proc    defaults                0       0
+sysfs           /sys    sysfs   defaults                0       0
+/dev/sda1       /boot/efi       vfat    defaults,relatime       0       0
+devtmpfs        /dev    devtmpfs        rw      0       0
+</code></pre></div><h3 id="scan-the-changes"><a href="#scan-the-changes" class="header-anchor">#</a> Scan the changes</h3> <ul><li><code>vgscan</code></li> <li><code>vgchange -ay</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># vgscan</span>
+  Reading all physical volumes.  This may take a while<span class="token punctuation">..</span>.
+  Found volume group <span class="token string">&quot;vg_main&quot;</span> using metadata <span class="token builtin class-name">type</span> lvm2
+<span class="token comment"># vgchange -ay</span>
+  <span class="token number">1</span> logical volume<span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token keyword">in</span> volume group <span class="token string">&quot;vg_main&quot;</span> now active
+</code></pre></div><h3 id="create-new-ramdisk"><a href="#create-new-ramdisk" class="header-anchor">#</a> Create new ramdisk</h3> <p>This step may be needed if your existing ramdisk is not aware of LVM</p> <ul><li><code>mkinitramfs -o /boot/initrd-$(uname -r).lvm.img</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># mkinitramfs -o /boot/initrd-$(uname -r).lvm.img</span>
+W: mdadm: /etc/mdadm/mdadm.conf defines no arrays.
+
+<span class="token comment"># ls -lah /boot</span>
+total 85M
+drwxr-xr-x  <span class="token number">4</span> root root <span class="token number">1</span>.0K Sep  <span class="token number">1</span> <span class="token number">16</span>:35 <span class="token builtin class-name">.</span>
+drwxr-xr-x <span class="token number">21</span> root root <span class="token number">4</span>.0K Sep  <span class="token number">1</span> <span class="token number">16</span>:04 <span class="token punctuation">..</span>
+-rw-r--r--  <span class="token number">1</span> root root <span class="token number">1</span>.2M Aug <span class="token number">15</span> <span class="token number">19</span>:48 abi-4.4.0-134-generic
+-rw-r--r--  <span class="token number">1</span> root root 187K Aug <span class="token number">15</span> <span class="token number">19</span>:48 config-4.4.0-134-generic
+drwxr-xr-x  <span class="token number">3</span> root root <span class="token number">4</span>.0K Jan  <span class="token number">1</span>  <span class="token number">1970</span> efi
+drwxr-xr-x  <span class="token number">6</span> root root <span class="token number">1</span>.0K Sep  <span class="token number">1</span> <span class="token number">15</span>:58 grub
+-rw-r--r--  <span class="token number">1</span> root root  37M Sep  <span class="token number">1</span> <span class="token number">16</span>:35 initrd-4.4.0-134-generic.lvm.img
+-rw-r--r--  <span class="token number">1</span> root root  37M Sep  <span class="token number">1</span> <span class="token number">16</span>:04 initrd.img-4.4.0-134-generic
+-rw-r--r--  <span class="token number">1</span> root root  <span class="token number">255</span> Aug <span class="token number">15</span> <span class="token number">19</span>:48 retpoline-4.4.0-134-generic
+-rw-------  <span class="token number">1</span> root root <span class="token number">3</span>.8M Aug <span class="token number">15</span> <span class="token number">19</span>:48 System.map-4.4.0-134-generic
+-rw-------  <span class="token number">1</span> root root <span class="token number">6</span>.9M Aug <span class="token number">15</span> <span class="token number">19</span>:48 vmlinuz-4.4.0-134-generic
+</code></pre></div><h3 id="edit-grub"><a href="#edit-grub" class="header-anchor">#</a> Edit grub</h3> <ul><li><code>nano /boot/grub/grub.cfg</code></li> <li>Add <code>/dev/vg_main/lv_root</code> to the root directory</li> <li>Change initrd image to the one created earlier <code>mkinitramfs -o /boot/initrd-$(uname -r).lvm.img</code></li></ul> <p>Result</p> <div class="language- extra-class"><pre class="language-text"><code>---snip---
+
+menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-a77a87e5-a10d-4655-b633-48676cfa3b2a' {
+        recordfail
+        load_video
+        gfxmode $linux_gfx_mode
+        insmod gzio
+        if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+        insmod part_gpt
+        insmod ext2
+        set root='hd0,gpt2'
+        if [ x$feature_platform_search_hint = xy ]; then
+          search --no-floppy --fs-uuid --set=root --hint-bios=hd0,gpt2 --hint-efi=hd0,gpt2 --hint-baremetal=ahci0,gpt2  1a818491-c638-4db2-988d-db2894f76d0d
+        else
+          search --no-floppy --fs-uuid --set=root 1a818491-c638-4db2-988d-db2894f76d0d
+        fi
+        linux   /vmlinuz-4.4.0-134-generic root=/dev/vg_main/lv_root ro  noquiet nosplash net.ifnames=0 biosdevname=0
+        initrd  /initrd-4.4.0-134-generic.lvm.img
+
+---snip---
+</code></pre></div><h3 id="reboot"><a href="#reboot" class="header-anchor">#</a> Reboot</h3> <p>Check that your server comes back up, once it does, it should look like this:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># lsblk</span>
+NAME                MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                   <span class="token number">8</span>:0    <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> disk
+├─sda1                <span class="token number">8</span>:1    <span class="token number">0</span>  511M  <span class="token number">0</span> part /boot/efi
+├─sda2                <span class="token number">8</span>:2    <span class="token number">0</span>  511M  <span class="token number">0</span> part /boot
+├─sda3                <span class="token number">8</span>:3    <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> part
+└─sda4                <span class="token number">8</span>:4    <span class="token number">0</span>  511M  <span class="token number">0</span> part <span class="token punctuation">[</span>SWAP<span class="token punctuation">]</span>
+sdb                   <span class="token number">8</span>:16   <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> disk
+├─sdb1                <span class="token number">8</span>:17   <span class="token number">0</span>  511M  <span class="token number">0</span> part
+└─sdb2                <span class="token number">8</span>:18   <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> part
+  └─vg_main-lv_root <span class="token number">252</span>:0    <span class="token number">0</span>  <span class="token number">1</span>.8T  <span class="token number">0</span> lvm  /
+
+<span class="token comment"># df -h</span>
+Filesystem            Size  Used Avail Use% Mounted on
+udev                   16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /dev
+tmpfs                 <span class="token number">3</span>.2G   14M  <span class="token number">3</span>.1G   <span class="token number">1</span>% /run
+/dev/vg_main/lv_root  <span class="token number">1</span>.8T  <span class="token number">1</span>.5G  <span class="token number">1</span>.7T   <span class="token number">1</span>% /
+tmpfs                  16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /dev/shm
+tmpfs                 <span class="token number">5</span>.0M     <span class="token number">0</span>  <span class="token number">5</span>.0M   <span class="token number">0</span>% /run/lock
+tmpfs                  16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/sda2             487M   97M  362M  <span class="token number">22</span>% /boot
+/dev/sda1             510M  136K  510M   <span class="token number">1</span>% /boot/efi
+</code></pre></div><p>You can see that the <code>/</code> partition is mounted on <code>/dev/sdb2</code> now.</p> <h3 id="create-new-pv"><a href="#create-new-pv" class="header-anchor">#</a> Create New PV</h3> <ul><li>Check your disk layout <code>fdisk -l</code> or <code>lsblk</code></li></ul> <div class="custom-block danger"><p class="custom-block-title">DANGER</p> <p>Do not delete your boot partition!</p></div> <ul><li><code>pvcreate /dev/sda3</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># pvcreate /dev/sda3</span>
+WARNING: ext4 signature detected on /dev/sda3 at offset <span class="token number">1080</span>. Wipe it? <span class="token punctuation">[</span>y/n<span class="token punctuation">]</span>: y
+  Wiping ext4 signature on /dev/sda3.
+  Physical volume <span class="token string">&quot;/dev/sda3&quot;</span> successfully created
+</code></pre></div><ul><li>Check the new PV <code>pvdisplay</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># pvdisplay</span>
+  --- Physical volume ---
+  PV Name               /dev/sdb2
+  VG Name               vg_main
+  PV Size               <span class="token number">1.82</span> TiB / not usable <span class="token number">1.07</span> MiB
+  Allocatable           <span class="token function">yes</span> <span class="token punctuation">(</span>but full<span class="token punctuation">)</span>
+  PE Size               <span class="token number">4.00</span> MiB
+  Total PE              <span class="token number">476804</span>
+  Free PE               <span class="token number">0</span>
+  Allocated PE          <span class="token number">476804</span>
+  PV UUID               o8svsy-NUwd-2mOe-6PWx-Taop-Cf44-MxA19c
+
+  <span class="token string">&quot;/dev/sda3&quot;</span> is a new physical volume of <span class="token string">&quot;1.82 TiB&quot;</span>
+  --- NEW Physical volume ---
+  PV Name               /dev/sda3
+  VG Name
+  PV Size               <span class="token number">1.82</span> TiB
+  Allocatable           NO
+  PE Size               <span class="token number">0</span>
+  Total PE              <span class="token number">0</span>
+  Free PE               <span class="token number">0</span>
+  Allocated PE          <span class="token number">0</span>
+  PV UUID               3uJ1oO-kt5i-cjnR-kHU8-1jOc-1jzx-Wa1gXj
+</code></pre></div><h3 id="extend-vg"><a href="#extend-vg" class="header-anchor">#</a> Extend VG</h3> <ul><li>Extend your VG <code>vgextend /dev/vg_main /dev/sda3</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># vgextend /dev/vg_main /dev/sda3</span>
+  Volume group <span class="token string">&quot;vg_main&quot;</span> successfully extended
+</code></pre></div><ul><li>Check your VG <code>vgdisplay</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># vgdisplay</span>
+  --- Volume group ---
+  VG Name               vg_main
+  System ID
+  Format                lvm2
+  Metadata Areas        <span class="token number">2</span>
+  Metadata Sequence No  <span class="token number">3</span>
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                <span class="token number">0</span>
+  Cur LV                <span class="token number">1</span>
+  Open LV               <span class="token number">1</span>
+  Max PV                <span class="token number">0</span>
+  Cur PV                <span class="token number">2</span>
+  Act PV                <span class="token number">2</span>
+  VG Size               <span class="token number">3.64</span> TiB
+  PE Size               <span class="token number">4.00</span> MiB
+  Total PE              <span class="token number">953351</span>
+  Alloc PE / Size       <span class="token number">476804</span> / <span class="token number">1.82</span> TiB
+  Free  PE / Size       <span class="token number">476547</span> / <span class="token number">1.82</span> TiB
+  VG UUID               ltBtnM-2Oxu-WVWk-YcLY-wLHy-AZiE-dm2MiR
+</code></pre></div><h3 id="extend-lv"><a href="#extend-lv" class="header-anchor">#</a> Extend LV</h3> <ul><li>Extend your LV <code>lvextend -l +100%FREE /dev/vg_main/lv_root</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># lvextend -l +100%FREE /dev/vg_main/lv_root</span>
+  Size of logical volume vg_main/lv_root changed from <span class="token number">1.82</span> TiB <span class="token punctuation">(</span><span class="token number">476804</span> extents<span class="token punctuation">)</span> to <span class="token number">3.64</span> TiB <span class="token punctuation">(</span><span class="token number">953351</span> extents<span class="token punctuation">)</span>.
+  Logical volume lv_root successfully resized.
+</code></pre></div><ul><li>Check your LV <code>lvs</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># lvs</span>
+  LV      VG      Attr       LSize Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_root vg_main -wi-ao---- <span class="token number">3</span>.64t
+<span class="token comment"># lvdisplay</span>
+  --- Logical volume ---
+  LV Path                /dev/vg_main/lv_root
+  LV Name                lv_root
+  VG Name                vg_main
+  LV UUID                9y6COH-813Z-AU6u-nAtd-CdCA-leOS-NgT57S
+  LV Write Access        read/write
+  LV Creation host, <span class="token function">time</span> ns3099345, <span class="token number">2018</span>-09-01 <span class="token number">16</span>:28:21 +0200
+  LV Status              available
+  <span class="token comment"># open                 1</span>
+  LV Size                <span class="token number">3.64</span> TiB
+  Current LE             <span class="token number">953351</span>
+  Segments               <span class="token number">2</span>
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently <span class="token builtin class-name">set</span> to     <span class="token number">256</span>
+  Block device           <span class="token number">252</span>:0
+</code></pre></div><h3 id="resizing-the-filesystem"><a href="#resizing-the-filesystem" class="header-anchor">#</a> Resizing the filesystem</h3> <ul><li>Resize the partition <code>resize2fs /dev/vg_main/lv_root</code>
+Before:</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># df -h</span>
+Filesystem            Size  Used Avail Use% Mounted on
+udev                   16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /dev
+tmpfs                 <span class="token number">3</span>.2G   14M  <span class="token number">3</span>.1G   <span class="token number">1</span>% /run
+/dev/vg_main/lv_root  <span class="token number">1</span>.8T  <span class="token number">1</span>.5G  <span class="token number">1</span>.7T   <span class="token number">1</span>% /
+tmpfs                  16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /dev/shm
+tmpfs                 <span class="token number">5</span>.0M     <span class="token number">0</span>  <span class="token number">5</span>.0M   <span class="token number">0</span>% /run/lock
+tmpfs                  16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/sda2             487M   97M  362M  <span class="token number">22</span>% /boot
+/dev/sda1             510M  136K  510M   <span class="token number">1</span>% /boot/efi
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># resize2fs /dev/vg_main/lv_root</span>
+resize2fs <span class="token number">1.42</span>.13 <span class="token punctuation">(</span><span class="token number">17</span>-May-2015<span class="token punctuation">)</span>
+Filesystem at /dev/vg_main/lv_root is mounted on /<span class="token punctuation">;</span> on-line resizing required
+old_desc_blocks <span class="token operator">=</span> <span class="token number">117</span>, new_desc_blocks <span class="token operator">=</span> <span class="token number">233</span>
+The filesystem on /dev/vg_main/lv_root is now <span class="token number">976231424</span> <span class="token punctuation">(</span>4k<span class="token punctuation">)</span> blocks long.
+</code></pre></div><p>After:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># df -h</span>
+Filesystem            Size  Used Avail Use% Mounted on
+udev                   16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /dev
+tmpfs                 <span class="token number">3</span>.2G   14M  <span class="token number">3</span>.1G   <span class="token number">1</span>% /run
+/dev/vg_main/lv_root  <span class="token number">3</span>.6T  <span class="token number">1</span>.5G  <span class="token number">3</span>.5T   <span class="token number">1</span>% /
+tmpfs                  16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /dev/shm
+tmpfs                 <span class="token number">5</span>.0M     <span class="token number">0</span>  <span class="token number">5</span>.0M   <span class="token number">0</span>% /run/lock
+tmpfs                  16G     <span class="token number">0</span>   16G   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/sda2             487M   97M  362M  <span class="token number">22</span>% /boot
+/dev/sda1             510M  136K  510M   <span class="token number">1</span>% /boot/efi
+</code></pre></div><h3 id="finish"><a href="#finish" class="header-anchor">#</a> Finish</h3> <p>Reboot your system to make sure everything comes back.</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2021/12/11 19:48+00:00</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/linux/logrotation.html" class="prev">
+        Logrotation
+      </a></span> <span class="next"><a href="/linux/mdraid.html">
+        MDRaid
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.5ec0f833.js" defer></script><script src="/assets/js/2.e3d7a0c0.js" defer></script><script src="/assets/js/38.5f339744.js" defer></script><script src="/assets/js/6.87a7cc97.js" defer></script>
+  </body>
+</html>
